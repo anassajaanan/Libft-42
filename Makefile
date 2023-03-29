@@ -21,6 +21,7 @@ all: ${NAME}
 %.o: %.c
 	${CC} ${CFLAGS} -c -I ./ $< -o $@
 
+
 clean:
 	${RM} ${OBJS}
 

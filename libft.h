@@ -13,18 +13,17 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<unistd.h>
-# include<stdlib.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 // LIBC FUNCTIONS
 int		ft_atoi(const char *str);
 void	ft_bzero(void *str, size_t num);
 void	*ft_calloc(size_t nbr_elmts, size_t size);
-int		ft_isalnum(char c);
-int		ft_isalpha(char c);
+int		ft_isalpha(int c);
 int		ft_isascii(int c);
-int		ft_isdigit(char c);
-int		ft_isprint(char c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t num);
 void	*ft_memchr(const void *str, int c, size_t num);
 int		ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
@@ -52,4 +51,5 @@ char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strmapi(const char *str, char (*f)(unsigned int, char));
 char	*ft_strtrim(const char *s1, const char *set);
 char	*ft_substr(const char *str, unsigned int start, size_t len);
+
 #endif

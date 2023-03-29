@@ -80,8 +80,12 @@ char	**ft_split(const char *str, char sep)
 	int		words;
 	char	**array;
 
+	if (!str)
+		return (NULL);
 	words = count_words(str, sep);
 	array = malloc(sizeof(char *) * (words + 1));
+	if (!array)
+		return (NULL);
 	add_words(array, str, sep);
 	array[words] = 0;
 	return (array);

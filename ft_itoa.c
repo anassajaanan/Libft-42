@@ -19,6 +19,11 @@ static int	get_num_len(int n)
 	i = 0;
 	if (n == 0)
 		return (1);
+	if (n < 0)
+	{
+		i = 1;
+		n *= -1;
+	}
 	while (n > 0)
 	{
 		i++;
@@ -41,9 +46,10 @@ char	*ft_itoa(int n)
 	{
 		n *= -1;
 		stop = 1;
-		i = get_num_len(n) + 1;
 	}
 	res = malloc(sizeof(char) * (i + 1));
+	if (!res)
+		return (NULL);
 	res[i] = '\0';
 	res[0] = '-';
 	while (i > stop)

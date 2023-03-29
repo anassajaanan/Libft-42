@@ -28,12 +28,12 @@ static int	is_set(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
 	int		start;
 	int		end;
 	char	*new_str;
 
-	i = 0;
+	if (!s1 || !set)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s1) - 1;
 	while (s1[start] && is_set(s1[start], set))
@@ -45,11 +45,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	new_str = malloc(sizeof(char) * (end - start + 2));
 	if (new_str == NULL)
 		return (NULL);
-	while (i < (end - start + 1))
-	{
-		new_str[i] = s1[start + i];
-		i++;
-	}
-	new_str[i] = '\0';
+	ft_strlcpy(new_str, s1 + start, end - start + 2);
 	return (new_str);
 }
