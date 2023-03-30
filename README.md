@@ -59,6 +59,8 @@ gcc your_c_file.c -L. -lft -o your_program
 The Libft-42 library includes the following functions:
 ### Character Functions
 
+These functions perform character classification, conversion, and comparison operations.
+
 * [`ft_isalpha`](https://github.com/csstudentanas/Libft-42/blob/main/ft_isalpha.c): Checks if a character is an alphabetic character.
 * [`ft_isdigit`](https://github.com/csstudentanas/Libft-42/blob/main/ft_isdigit.c): Checks if a character is a digit.
 * [`ft_isalnum`](https://github.com/csstudentanas/Libft-42/blob/main/ft_isalnum.c): Checks if a character is an alphanumeric character.
@@ -68,6 +70,8 @@ The Libft-42 library includes the following functions:
 * [`ft_tolower`](https://github.com/csstudentanas/Libft-42/blob/main/ft_tolower.c): Converts an uppercase character to lowercase.
 
 ### String Functions
+
+These functions handle string manipulation, copying, concatenation, searching, and comparison tasks.
 
 * [`ft_strlen`](https://github.com/csstudentanas/Libft-42/blob/main/ft_strlen.c): Calculates the length of a string.
 * [`ft_strlcpy`](https://github.com/csstudentanas/Libft-42/blob/main/ft_strlcpy.c): Safely copies a string to another buffer.
@@ -81,6 +85,8 @@ The Libft-42 library includes the following functions:
 
 ### Memory Functions
 
+These functions manage memory operations, including setting, copying, moving, searching, and comparison.
+
 * [`ft_memset`](https://github.com/csstudentanas/Libft-42/blob/main/ft_memset.c): Fills a memory block with a specified value.
 * [`ft_bzero`](https://github.com/csstudentanas/Libft-42/blob/main/ft_bzero.c): Sets the contents of a memory block to zero.
 * [`ft_memcpy`](https://github.com/csstudentanas/Libft-42/blob/main/ft_memcpy.c): Copies a memory block from source to destination.
@@ -90,6 +96,8 @@ The Libft-42 library includes the following functions:
 * [`ft_memcmp`](https://github.com/csstudentanas/Libft-42/blob/main/ft_memcmp.c): Compares two memory blocks up to a maximum length.
 
 ### List Functions
+
+These functions deal with linked list operations, such as creation, addition, deletion, iteration, and transformation.
 
 * [`ft_lstnew`](https://github.com/csstudentanas/Libft-42/blob/main/ft_lstnew.c): Creates a new node for a linked list.
 * [`ft_lstadd_front`](https://github.com/csstudentanas/Libft-42/blob/main/ft_lstadd_front.c): Adds a new node to the beginning of a linked list.
@@ -102,6 +110,8 @@ The Libft-42 library includes the following functions:
 * [`ft_lstmap`](https://github.com/csstudentanas/Libft-42/blob/main/ft_lstmap.c): Iterates through a linked list, applies a function to each node, and creates a new list with the results.
 
 ### Additional Functions
+
+These functions provide supplementary functionality, including string trimming, splitting, integer-to-string conversion, character mapping, and output to file descriptors.
 
 * [`ft_strtrim`](https://github.com/csstudentanas/Libft-42/blob/main/ft_strtrim.c): Trims whitespace characters from the beginning and end of a string.
 * [`ft_split`](https://github.com/csstudentanas/Libft-42/blob/main/ft_split.c): Splits a string into substrings based on a delimiter.
